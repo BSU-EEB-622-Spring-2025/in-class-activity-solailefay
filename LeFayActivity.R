@@ -181,6 +181,9 @@ ggplot(posteriorQ1b, aes(x = b_scaleboatnoise)) +
 plot_predictions(nbmod1_totsongs, condition="boatnoise") + theme_bw()
 plot_predictions(mod1_songlength, condition="boatnoise") + theme_bw()
 
+#random effects mcmc_plot
+mcmc_plot(nbmod1_totsongs, pars = "^r")
+
 
 #### Interpret Results - Research Q 2 ####
 #### Main effect of interest is boat ACTIVITY
